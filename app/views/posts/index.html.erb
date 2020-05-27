@@ -1,0 +1,5 @@
+<ol>
+<% @posts.each do |post|%>
+<li><%= post.body.truncate(15) %> | <%= link_to "view", post_path(post)%></li>
+<% end %>
+</ol>
